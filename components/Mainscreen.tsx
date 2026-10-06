@@ -9,6 +9,14 @@ function MainScreen () {
     const [petName, setPetName] = useState ('');
     const [pet, setpet]= useState<string[]>([]);    
     const [selectdValue, setSelectedValue]= useState ('0');
+
+    const renderPets = () => {
+    const arrDisplay = [];
+
+    for(let i=0; i < pet.length; i++){
+        
+    }
+    }
     
     return (
         <View>
