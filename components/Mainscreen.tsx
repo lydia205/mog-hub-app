@@ -1,5 +1,5 @@
 import { useState, } from 'react';
-import {View,SafeAreaView, ScrollView ,Image, Text, TextInput} from 'react-native';
+import { Button,View,SafeAreaView, ScrollView ,Image, Text, TextInput} from 'react-native';
 import styles from '../components/Styles'
 import {RadioButton} from 'react-native-paper';
 import { StatusBar } from 'expo-status-bar';
