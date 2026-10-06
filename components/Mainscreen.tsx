@@ -91,9 +91,17 @@ function MainScreen () {
                         </View>
 
                     </View>
+                    <Button title="Add Pet"
+                     onPress= {() => {
+                        setpet([...pet ,petName]);
+                        setPetName('');
+                     }}
+                    />
+                    <V
                 </ScrollView>
             </SafeAreaView>
         </View>
+
     )
 }
 export default MainScreen
