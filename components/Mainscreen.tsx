@@ -2,6 +2,7 @@ import { useState, } from 'react';
 import {View,SafeAreaView, ScrollView ,Image, Text, TextInput} from 'react-native';
 import styles from '../components/Styles'
 import {RadioButton} from 'react-native-paper';
+import { StatusBar } from 'expo-status-bar';
 
  
 function MainScreen () {
@@ -97,7 +98,10 @@ function MainScreen () {
                         setPetName('');
                      }}
                     />
-                    <V
+                    <View style={styles.petContainer}>
+                        {renderPets()}
+                    </View>
+                    <StatusBar style="auto"/>
                 </ScrollView>
             </SafeAreaView>
         </View>
