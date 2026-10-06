@@ -68,6 +68,25 @@ const styles= StyleSheet.create({
      fontSize: 15,
      color: 'black'
     },
+inputContainer : {
+    flex:1,
+    flexDirection:'row',
+    justifyContent: 'space-between',
+    alignItems:'center',
+    marginBottom: 25,
+    borderBottomWidth: 1,
+    borderBottomColor:'#7ad1f3'
+},
+petContainer: {
+    flex:5,
+},
+petTxt: {
+    fontSize: 15,
+    marginVertical: 5,
+    borderBlockColor:'black',
+    borderBottomWidth: 1,
+},
 
 })
+
 export default styles;
