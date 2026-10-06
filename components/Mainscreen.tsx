@@ -14,9 +14,18 @@ function MainScreen () {
     const arrDisplay = [];
 
     for(let i=0; i < pet.length; i++){
+        arrDisplay.push (
+            <View key={i} style={styles.inputContainer}>
+                <Text style={styles.petTxt}>
+                    {pet[i]}
         
+                </Text>
+            </View>
+        );
     }
+    return arrDisplay;
     }
+    
     
     return (
         <View>
