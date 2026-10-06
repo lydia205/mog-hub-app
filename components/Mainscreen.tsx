@@ -40,12 +40,35 @@ function MainScreen () {
 
                                     value= '1'
                                     status={selectdValue == "1" ? 'checked' : 'unchecked'}
-                                   
+                                    onPress={() => setSelectedValue('1')}
+                                       color='orange'
+            
                                     />
+                                    <Text style={styles.radioLabel}>cat</Text>
+                                    </View>
+                                    <View style={styles.radioLabel}>
+                                        <RadioButton.Android
+                                        value='2'
+                                        status={selectdValue == "2" ? 'checked':'unchecked'}
+                                        onPress={() => setSelectedValue ('2')}
+                                        color='orange'
+                                        />
+                                        <Text style={styles.radioLabel}>Dog</Text>
+                                    </View>
+
+                                    <View style={styles.radioLabel}>
+                                        <RadioButton.Android
+                                        value='3'
+                                        status={selectdValue == "3" ? 'checked' : 'unchecked'}
+                                        onPress={() => setSelectedValue ('3')}
+                                        color='orange'
+                                        />
+                                        <Text style={styles.radioLabel}>Other</Text>
+                                    </View>
                                     
 
 
-                                </View>
+                                
                             </View>
                         </View>
 
