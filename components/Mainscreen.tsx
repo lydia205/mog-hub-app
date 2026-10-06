@@ -7,6 +7,7 @@ import {RadioButton} from 'react-native-paper';
 function MainScreen () {
 
     const [petName, setPetName] = useState ('');
+    const [pet, setpet]= useState<string[]>([]);
     const [selectdValue, setSelectedValue]= useState ('0');
     
     return (
